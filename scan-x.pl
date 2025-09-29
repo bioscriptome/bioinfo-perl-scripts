@@ -1,0 +1,9 @@
+#!/usr1/bin/perl
+use LWP::Simple;
+$seq='MIKYTIDELFQLKPSLTLEVNFDAVEFRAIIEKVKQLQHLKEEEFNSHHVGHFGRRRSSHHHGRPKIKHNKPKVTTDSDGWCTFEAKKKGSGEDDEEETETTPTSTVPVATIAQETLKVKPNNKNISSNRPADTRDIVADKPILGFNAFAALESEDEDDEA';
+$mod95="yeast_st_95sp";
+$mod99="yeast_st_99sp";
+#http://scan-x.med.harvard.edu/cgi-bin/cgi-bin/scanscan.pl?dataset=yeast_st_95sp&sequence=MIKYTIDELFQLKPSLTLEVNFDAVEFRAIIEKVKQLQHLKEEEFNSHHVGHFGRRRSSHHHGRPKIKHNKPKVTTDSDGWCTFEAKKKGSGEDDEEETETTPTSTVPVATIAQETLKVKPNNKNISSNRPADTRDIVADKPILGFNAFAALESEDEDDEA
+    $url='http://scan-x.med.harvard.edu/cgi-bin/scanscan.pl?dataset='.$mod95.'&sequence='.$seq;
+#system "lynx -dump -width 500 \"$url\" >out";
+getstore($url,"outtt");
