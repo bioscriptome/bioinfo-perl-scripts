@@ -1,0 +1,1 @@
+perl -n -e '$line=$_;chomp($line);$line=~s/  1:/\@1:/g;@split=split("@",$line);undef $norm; $norm=1-$split[0];print $norm."  $split[1]\n"' sirna1_saetrom581_bin76.pat >sirna1_saetrom581_bin76_norm.pat
